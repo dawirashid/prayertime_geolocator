@@ -40,20 +40,81 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            TextButton.icon(
+              onPressed: () {},
+              icon: const Icon(
+                Icons.room,
+                color: Colors.deepOrange,
+              ),
+              label: const Text(
+                'Find GPS',
+              ),
+            ),
             const Text(
-              'TIME DISPLAY HERE',
-              style: TextStyle(color: Colors.black),
+              'Fajr',
+              style: TextStyle(
+                fontSize: 40,
+              ),
             ),
             const SizedBox(
-              height: 300,
+              height: 15,
             ),
-            TextButton.icon(
-                onPressed: () {},
-                icon: const Icon(Icons.add_location),
-                label: const Text('Find GPS'))
+            const Text(
+              'Sunrise',
+              style: TextStyle(
+                fontSize: 40,
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Dhuhr',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Asr',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Sunset',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Maghrib',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Isha',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            const Text(
+              'Imsak',
+              style: TextStyle(fontSize: 40),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+
           ],
         ),
       ),
     );
   }
 }
+// to do listview
